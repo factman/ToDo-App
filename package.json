@@ -12,6 +12,36 @@
         "CSS",
         "JavaScript"
     ],
-    "author": "Mohammed Odunayo",
-    "license": "MIT"
+    "author": {
+        "name": "Mohammed Odunayo",
+        "email": "factman60@gmail.com",
+        "url": "https://github.com/factman"
+    },
+    "license": "MIT",
+    "contributors": [
+        {
+            "name": "Mohammed Odunayo",
+            "email": "factman60@gmail.com",
+            "url": "https://github.com/factman"
+        }
+    ],
+    "engineStrict": true,
+    "homepage": "https://factman.github.io/ToDo-App",
+    "maintainers": [
+        {
+            "name": "Mohammed Odunayo",
+            "email": "factman60@gmail.com",
+            "url": "https://github.com/factman"
+        }
+    ],
+    "optionalDependencies": {
+        "serve": "^11.3.0"
+    },
+    "repository": {
+        "url": "https://github.com/factman/ToDo-App.git",
+        "type": "git"
+    },
+    "devDependencies": {
+        "eslint": "^6.8.0"
+    }
 }
