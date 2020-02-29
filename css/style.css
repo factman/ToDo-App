@@ -1,0 +1,185 @@
+html, body {
+    font-family: "Lato Light", sans-serif;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    color: #333333;
+}
+
+h1, h2, h3 {
+    font-family: "Lato Thin", sans-serif !important;
+}
+
+.frame {
+    width: 100%;
+    height: calc(100% - 100px);
+    position: absolute;
+    background: #fcfcfc;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.todo-body {
+    width: 700px;
+    min-height: 300px;
+    max-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+}
+
+.header {
+    width: calc(100% - 5em);
+    padding: 1em;
+    background: #00AAFF;
+    border-radius: 20px 20px 5px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: -2em;
+    position: relative;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+}
+
+.icon, .export {
+    width: 40px;
+    height: 40px;
+}
+
+.icon > img, .export > img {
+    width: 100%;
+}
+
+.title {
+    margin: 0;
+    color: white;
+}
+
+.export {
+    background-color: white;
+    border-radius: 50px;
+    padding: 0.25em;
+    width: calc(40px - 0.5em);
+    height: calc(40px - 0.5em);
+    cursor: pointer;
+    transition: all 200ms;
+}
+
+.list-con {
+    background-color: white;
+    width: calc(100%);
+    min-height: 300px;
+    max-height: 70vh;
+    padding-top: 3em;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    overflow-y: auto;
+    border: 1px solid #cccccc;
+    margin-bottom: -1px;
+    box-shadow: 0 60px 30px rgba(0, 0, 0, 0.2);
+}
+
+.list-item {
+    width: calc(100% - 3em + 1px);
+    background-color: white;
+    padding: 0.5em 1.5em;
+    border: 1px solid #cccccc;
+    margin-bottom: -1px;
+    margin-left: -1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.status-icon, .action-icon {
+    width: 35px;
+    height: 35px;
+}
+
+.content {
+    flex: 4;
+    margin: 0 1em 0 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.content > h3 {
+    margin: 0 0 0.25em;
+    text-transform: capitalize;
+}
+
+.content > p {
+    margin: 0;
+    font-size: 80%;
+}
+
+.action {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.action-icon {
+    margin-left: 1em;
+    cursor: pointer;
+    transition: all 200ms;
+}
+
+.action-icon:hover, .add-button:hover, .export:hover {
+    filter: opacity(0.8);
+}
+
+.add-con {
+    background-color: white;
+    width: calc(100% - 3em);
+    padding: 0.5em 1.5em;
+    border: 1px solid #cccccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.add-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.title-input {
+    flex: 1;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 0.5em;
+    margin: 0 0.5em 0 1em;
+}
+
+.desc-input {
+    flex: 2;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 0.5em;
+    margin: 0 1em 0 0.5em;
+}
+
+.add-button {
+    background-color: #00AAFF;
+    color: white;
+    padding: 0.5em 0;
+    flex: 1;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+    transition: all 200ms;
+}
+
+.add-button[disabled = 'disabled'] {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}

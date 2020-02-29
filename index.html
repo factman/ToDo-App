@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To Do Application</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<div class="frame">
+    <div class="todo-body">
+        <div class="header">
+            <div class="icon">
+                <img src="./img/Apple%20Reminders.png" alt="...">
+            </div>
+            <h1 class="title">To Do</h1>
+            <div class="export" id="export" title="Export Data">
+                <img src="./img/Download.png" alt="...">
+            </div>
+        </div>
+        <div class="list-con" id="list_container">
+            <!-- Completed Task Item
+            <div class="list-item">
+                <img src="./img/Done%20All.png" alt="..." class="status-icon">
+                <div class="content">
+                    <h3>Completed Task</h3>
+                    <p>This is a completed task description.</p>
+                </div>
+                <div class="action">
+                    <img src="./img/Cancel.png" alt="..." class="action-icon">
+                </div>
+            </div>
+            -->
+            <!-- Pending Task Item
+            <div class="list-item">
+                <img src="./img/Pending.png" alt="..." class="status-icon">
+                <div class="content">
+                    <h3>Pending Task</h3>
+                    <p>This is a pending task description.</p>
+                </div>
+                <div class="action">
+                    <img src="./img/approve.png" alt="..." class="action-icon">
+                    <img src="./img/Cancel.png" alt="..." class="action-icon">
+                </div>
+            </div>
+            -->
+        </div>
+        <div class="add-con">
+            <img src="./img/Add.png" alt="..." class="add-icon">
+            <input type="text" required minlength="2" id="todo_title" class="title-input" placeholder="Task Title">
+            <input type="text" id="todo_desc" required minlength="6" class="desc-input" placeholder="Task Description">
+            <button class="add-button" id="add_button" title="Create Task">Add</button>
+        </div>
+    </div>
+</div>
+
+<script src="./js/script.js"></script>
+</body>
+</html>
